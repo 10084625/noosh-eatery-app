@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Request Submitted";
+}
+
+<section class="careers-confirmation py-5">
+    <div class="container">
+        <div class="confirmation-card">
+            <i class="fa-solid fa-circle-check confirmation-icon"></i>
+            <h1 class="confirmation-title">Request Submitted!</h1>
+        <p class="confirmation-text">
+            Thanks for reaching out — we've received your catering request
+            (Reference #@ViewBag.RequestId) and our team will contact you shortly to confirm the details.
+        </p>
+        <a asp-controller="Home" asp-action="Index" class="btn btn-hero-primary w-100">
+            <i class="fa-solid fa-house me-2"></i>Back to Home
+        </a>
+        </div>
+    </div>
+</section>
